@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		span { width: 100px; display: inline-block; }
+		div { margin: 20px 10px 7px 3px; }
+		textarea { height: 100px; }
+		button {
+			background-color: sienna;
+		    color: white;
+		    border: none;
+		    padding: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+	<a href="test.html">back</a>
+	<form>
+	<h1>Student Admission Form</h1>
+	<div>
+		<span>Name:</span>
+		<input type="text" name="name"/>
+	</div>
+	<div>
+		<span>Age:</span>
+		<input type="text" name="age">
+	</div>
+	<div>
+		<span>Gender:</span>
+		Male <input type="radio" name="gender" value="M">
+		Female <input type="radio" name="gender" value="F">
+	</div>
+	<div>
+		<span>City:</span>
+		<select name="city">
+			<option>Kolkata</option>
+			<option>Bhuvaneshwar</option>
+			<option>Delhi</option>
+			<option>Mumbai</option>
+			<option>Chennai</option>
+		</select>
+	</div>
+	<div>
+		<span>Address</span>
+		<textarea name="adderss" maxlength="20"></textarea>
+	</div>
+	<button type="submit">Add</button>
+	</form>
+</body>
+</html>
