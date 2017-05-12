@@ -12,9 +12,9 @@ upBtn.onclick = function () {
 		topValue = topValue.slice(0, topValue.length - 2);
 	}
 	topValue = parseInt(topValue);
-	newTopValue = topValue - 10;
-
-	character.style.top = newTopValue + 'px';
+	topValue = topValue - 10;
+	topValue = topValue + 'px';
+	character.style.top = topValue;
 }
 
 downBtn.onclick = function () {
