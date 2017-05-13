@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Todo List</h2>
+<div ng-init="todos = ['Bring Milk', 'Pay mobile bill']"></div>
+<input type="text" ng-model="newTodo">
+{{newTodo}} 
+<button ng-click="todos.push(newTodo); newTodo=''">Add</button>
+<ul>
+	<li ng-repeat="todo in todos">
+		<input type="checkbox">
+		{{ todo }}
+	</li>
+</ul>
+<h2>On Off Switch</h2>
+<button ng-click="val='ON'">ON</button>
+<button ng-click="val='OFF'">OFF</button>
+{{val}}
+
+<h2>Color box</h2>
+<button ng-click="bg='red'">RED</button>
+<button ng-click="bg='green'">GREEN</button>
+<button ng-click="bg='blue'">BLUE</button>
+
+<div style="height: 100px; width: 100px;background-color: {{bg}}" ng-init="bg='gray'"></div>
+
+<script src="angular.min.js"></script>
+</body>
+</html>
